@@ -7,7 +7,7 @@ const GoalList = props => {
 
                 {props.goals.map(goal =>{
                     return (
-                    <li key={goal.id}>goal.text</li>
+                    <li key={goal.id}>{goal.text}</li>
                 )})}
                {/* <li>web technology </li>
                <li>system design and analysis</li>
