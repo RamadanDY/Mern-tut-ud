@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+///adding  a usestate a fucntion  , manage data which when changed
 import "./App.css";
 import GoalList from "./Components/GoalList/GoalList";
 // import { ReactDOM } from "react";
 import NewGoal from "./Components/GoalList/NewGoal/NewGoal";
 
 const App = () => {
+  ////usestate also returns something it returns 2 elements the latest state elemnt and the sec is the one that allows us to update,rerender
   const [courseGoals, setCourseGoals] = useState([
     // const courseGoals = [
     { id: "cg1", text: "web technology" },
@@ -18,7 +20,10 @@ const App = () => {
     ////we reach out to the courseGoal and push the new goal into the array via props(the props on line 22)and now lets pass it to new goals via props on line 26
     // courseGoals.push(newGoal);
     // console.log(courseGoals);
-    setCourseGoals(courseGoals.concat(newGoal));
+    // setCourseGoals(courseGoals.concat(newGoal));
+    setCourseGoals((preventCourseGoals) => {
+      return preventCourseGoals.concat(newGoal);
+    });
   };
 
   return (
