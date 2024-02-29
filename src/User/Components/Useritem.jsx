@@ -10,7 +10,7 @@ const Useritem = (props) => {
             </div>
             <div className="user-item__info">
                 <h2>{props.name}</h2>
-                <h3>{props.placeCount}  {props.placeCount === 0 ? 'place' : 'places u wanna '}</h3>
+                <h3>{props.placeCount}  {props.placeCount === 0 ? 'place' : 'places'}</h3>
                 {/* check if placeCount is === equal to zero then print place : or places . in this case placeCount is === to 3 so we print 3 places if its 0 we print 0 place/*/}
             </div>
 
