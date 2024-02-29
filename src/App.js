@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Switch,
+} from "react-router-dom";
+import Users from "./User/Pages/Users.jsx";
+import NewPlaces from "./Places/Pages/NewPlace.jsx";
+// import { Switch } from "@mui/material";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Switch>
+          {/* <h1>the name </h1> */}
+          <Route path="/" exact={true}>
+            <Users />
+          </Route>
+          <Route path="/places/new" exact={true}>
+            <NewPlaces />
+          </Route>
+          <Redirect to="/" />
+        </Switch>
+      </Router>
+    </>
   );
 }
 
