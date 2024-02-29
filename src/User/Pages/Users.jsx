@@ -15,7 +15,7 @@ const User = () => {
       name: 'Max Schwarz' ,
       image: 
        '/my-app/src/images/passport pic.jpg', 
-      places: 3,
+      places: 4,
     }
   ]
 
