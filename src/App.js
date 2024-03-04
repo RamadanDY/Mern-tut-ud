@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-///adding  a usestate a fucntion  , manage data which when changed
+///adding  a usestate a fucntion  , manage data which when changed shpuold read to the UI
 import "./App.css";
 import GoalList from "./Components/GoalList/GoalList";
 // import { ReactDOM } from "react";
 import NewGoal from "./Components/GoalList/NewGoal/NewGoal";
 
 const App = () => {
-  ////usestate also returns something it returns 2 elements the latest state elemnt and the sec is the one that allows us to update,rerender
+  ////usestate also returns something it returns 2 elements the latest state element and the sec is the one that allows us to update,rerender
+  ///// the useState() used tells react that this the initial used state
   const [courseGoals, setCourseGoals] = useState([
     // const courseGoals = [
     { id: "cg1", text: "web technology" },

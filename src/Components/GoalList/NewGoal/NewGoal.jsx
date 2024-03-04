@@ -1,4 +1,5 @@
 import React , {useState}from 'react'
+//// usestate it telling rect when it should rerender
 import './NewGoal.css'
 
 ///// after passing it from the Appjs(ie the parent compo)  into the  child compo we can now recieve it here as props in the function NewGoal as showed below 
